@@ -28,8 +28,8 @@ process.env.CLOUDINARY_CLOUD_NAME = 'dge1av7r7';
 process.env.CLOUDINARY_API_KEY = '513653858837876';
 process.env.CLOUDINARY_API_SECRET = 'LLC8E25AuB5P1uhpz11WsGkZYkw';
 process.env.JWT_SECRET = 'your-super-secret-jwt-key-2024';
-process.env.MONGODB_URI = 'mongodb+srv://Arios-Ecommerce:Arios@ayziel.gfrzim8.mongodb.net/?retryWrites=true&w=majority&appName=Ayziel';
-//process.env.MONGODB_URI = 'mongodb://localhost:27017/easycash-ecommerce'
+process.env.MONGODB_URI = process.env.MONGODB_URI = 'mongodb+srv://Arios-Ecommerce:Arios@ayziel.gfrzim8.mongodb.net/arios-cafe?retryWrites=true&w=majority&appName=Ayziel';
+//process.env.MONGODB_URI = 'mongodb://localhost:27017/arios-cafe'
 console.log('🔧 Environment Variables Check:');
 console.log('🔍 Raw MONGODB_URI value:', process.env.MONGODB_URI);
 console.log('PORT:', process.env.PORT);
@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 });
 
 // Test endpoint to verify server is running
-app.get('/api/test', (req, res) => {
+app.get('/api/arios-cafe', (req, res) => {
   res.json({ 
     message: 'Server is running!', 
     timestamp: new Date().toISOString(),
@@ -62,7 +62,7 @@ app.get('/api/test', (req, res) => {
 });
 
 // Test endpoint to check database connection
-app.get('/api/test-db', async (req, res) => {
+app.get('/api/arios-cafe-db', async (req, res) => {
   try {
     const orderCount = await require('./models/Order').countDocuments();
     const productCount = await require('./models/Product').countDocuments();
@@ -86,7 +86,7 @@ app.get('/api/test-db', async (req, res) => {
 });
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/easycash-ecommerce', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/arios-cafe', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

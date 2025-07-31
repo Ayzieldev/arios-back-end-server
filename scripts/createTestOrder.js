@@ -5,7 +5,7 @@ require('dotenv').config();
 async function createTestOrder() {
   try {
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/easycash-ecommerce', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/arios-cafe', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

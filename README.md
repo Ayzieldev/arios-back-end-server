@@ -1,4 +1,4 @@
-# EasyCash E-commerce Platform
+# arios-cafe E-commerce Platform
 
 A comprehensive e-commerce platform with admin panel, user website, and delivery boy panel. Built with Node.js, Express, MongoDB, and React.
 
@@ -48,7 +48,7 @@ A comprehensive e-commerce platform with admin panel, user website, and delivery
 ## Project Structure
 
 ```
-Easycashtest/
+arios-cafe/
 ├── client/                 # React frontend
 │   ├── public/
 │   ├── src/
@@ -77,7 +77,7 @@ Easycashtest/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd Easycashtest
+   cd arios-cafe
    ```
 
 2. **Install dependencies**
@@ -93,7 +93,7 @@ Easycashtest/
    Update the `.env` file with your configuration:
    ```env
    PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/easycash-ecommerce
+   MONGODB_URI=mongodb://localhost:27017/arios-cafe
    JWT_SECRET=your-super-secret-jwt-key
    CLOUDINARY_CLOUD_NAME=your-cloud-name
    CLOUDINARY_API_KEY=your-api-key
@@ -177,8 +177,8 @@ The admin panel will be available at `http://localhost:3000`
 ## Demo Credentials
 
 **Admin Login:**
-- Email: admin@easycash.com
-- Password: admin123
+- Email: arioscafe@gmail.com
+- Password: arioscafe
 
 ## Features Implemented
 
